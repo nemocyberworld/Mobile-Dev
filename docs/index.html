@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Stack Mobile App Dev Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6 overflow-x-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-[25%_40%_35%] gap-6 max-w-7xl mx-auto">
+
+    <!-- Left Column: Learning Resources -->
+    <aside class="bg-white shadow-md rounded-xl p-6 space-y-8 max-w-md mx-auto lg:max-w-none">
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mb-4">📚 Learn Mobile App Development</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://developer.android.com/courses" target="_blank" class="text-blue-600 hover:underline">Android Developer Courses</a> – Official Google Android</li>
+          <li><a href="https://developer.apple.com/learn/curriculum/" target="_blank" class="text-blue-600 hover:underline">Apple Developer Curriculum</a> – iOS & Swift tutorials</li>
+          <li><a href="https://reactnative.dev/docs/getting-started" target="_blank" class="text-blue-600 hover:underline">React Native Docs</a> – Cross-platform apps</li>
+          <li><a href="https://flutter.dev/docs" target="_blank" class="text-blue-600 hover:underline">Flutter Docs</a> – Google’s UI toolkit</li>
+          <li><a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" target="_blank" class="text-blue-600 hover:underline">iOS App Development Bootcamp</a> – Udemy</li>
+          <li><a href="https://www.coursera.org/specializations/android-app-development" target="_blank" class="text-blue-600 hover:underline">Android App Development Specialization</a> – Coursera</li>
+          <li><a href="https://www.pluralsight.com/paths/mobile-app-development" target="_blank" class="text-blue-600 hover:underline">Pluralsight Mobile Development Path</a></li>
+          <li><a href="https://www.freecodecamp.org/news/tag/mobile-development/" target="_blank" class="text-blue-600 hover:underline">freeCodeCamp Mobile Development Tutorials</a></li>
+          <li><a href="https://expo.dev" target="_blank" class="text-blue-600 hover:underline">Expo</a> – React Native tooling & deployment</li>
+          <li><a href="https://www.raywenderlich.com/ios" target="_blank" class="text-blue-600 hover:underline">Ray Wenderlich iOS Tutorials</a></li>
+          <li><a href="https://www.appbrewery.co/p/complete-react-native-mobile-app-development" target="_blank" class="text-blue-600 hover:underline">Complete React Native Course</a></li>
+          <li><a href="https://kotlinlang.org/docs/tutorials/" target="_blank" class="text-blue-600 hover:underline">Kotlin Tutorials</a> – Official language for Android</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Middle Column: Projects & Practice Ideas -->
+    <aside class="bg-white shadow-md rounded-xl p-6 space-y-8 max-w-2xl mx-auto lg:max-w-none">
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mb-4">🚀 Mobile App Projects & Practice</h2>
+
+        <button
+          type="button"
+          class="w-full flex justify-between items-center bg-gray-100 hover:bg-gray-200 p-3 rounded-md font-semibold text-gray-800"
+          aria-expanded="false"
+          aria-controls="projectList"
+          id="projectToggleBtn"
+          onclick="toggleSection('projectList', this)"
+        >
+          🧪 Practice Project Ideas (Click to Toggle)
+          <span id="projectToggleIcon">➕</span>
+        </button>
+
+        <ul
+          id="projectList"
+          class="hidden list-disc pl-5 text-gray-700 mt-4 space-y-1 text-sm transition-all duration-300"
+          aria-labelledby="projectToggleBtn"
+        >
+          <!-- Beginner -->
+          <li><strong>Todo List App</strong> – CRUD, local storage, notifications</li>
+          <li><strong>Weather App</strong> – Fetch API, display weather info</li>
+          <li><strong>Recipe Finder</strong> – API integration, list filtering</li>
+          <li><strong>Simple Chat App</strong> – Firebase Realtime DB</li>
+          <li><strong>Expense Tracker</strong> – Charts & categories</li>
+
+          <!-- Intermediate -->
+          <li><strong>Fitness Tracker</strong> – GPS tracking, user profiles</li>
+          <li><strong>Social Feed</strong> – Posts, likes, comments, realtime updates</li>
+          <li><strong>E-commerce Mobile App</strong> – Products, cart, payment integration</li>
+          <li><strong>Music Player</strong> – Local files & streaming API</li>
+          <li><strong>Multi-language Support</strong> – Localization with i18n</li>
+
+          <!-- Advanced -->
+          <li><strong>AR App</strong> – Augmented reality with ARCore / ARKit</li>
+          <li><strong>AI-powered Chatbot</strong> – Natural language processing</li>
+          <li><strong>Video Streaming App</strong> – Live and on-demand videos</li>
+          <li><strong>Offline Mode Support</strong> – Data caching & sync</li>
+          <li><strong>Mobile Payment Integration</strong> – Stripe, PayPal, Apple Pay</li>
+
+          <!-- Open Source & Real-world -->
+          <li><a href="https://github.com/facebook/react-native" target="_blank" class="text-blue-600 hover:underline font-semibold">React Native</a> – Cross-platform framework</li>
+          <li><a href="https://github.com/flutter/flutter" target="_blank" class="text-blue-600 hover:underline font-semibold">Flutter</a> – Google UI toolkit</li>
+          <li><a href="https://github.com/expo/expo" target="_blank" class="text-blue-600 hover:underline font-semibold">Expo</a> – React Native tools</li>
+          <li><a href="https://github.com/realm/realm-js" target="_blank" class="text-blue-600 hover:underline font-semibold">Realm DB</a> – Mobile database</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Right Column: Tools, Platforms & Interview Prep -->
+    <aside class="bg-white shadow-md rounded-xl p-6 space-y-8 max-w-md mx-auto lg:max-w-none">
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mb-4">🔧 Tools, Platforms & APIs</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://expo.dev" target="_blank" class="text-blue-600 hover:underline">Expo</a> – Build, deploy React Native apps</li>
+          <li><a href="https://firebase.google.com" target="_blank" class="text-blue-600 hover:underline">Firebase</a> – Backend & auth</li>
+          <li><a href="https://realm.io" target="_blank" class="text-blue-600 hover:underline">Realm Database</a> – Mobile database</li>
+          <li><a href="https://reactnavigation.org" target="_blank" class="text-blue-600 hover:underline">React Navigation</a> – Routing & navigation</li>
+          <li><a href="https://redux.js.org" target="_blank" class="text-blue-600 hover:underline">Redux</a> – State management</li>
+          <li><a href="https://www.fastlane.tools" target="_blank" class="text-blue-600 hover:underline">Fastlane</a> – Automate app releases</li>
+          <li><a href="https://appcenter.ms" target="_blank" class="text-blue-600 hover:underline">Microsoft App Center</a> – Build, test & deploy</li>
+          <li><a href="https://github.com/realm/realm-js" target="_blank" class="text-blue-600 hover:underline">Realm JS</a> – Local mobile database</li>
+          <li><a href="https://sentry.io" target="_blank" class="text-blue-600 hover:underline">Sentry</a> – Error tracking & monitoring</li>
+          <li><a href="https://storybook.js.org" target="_blank" class="text-blue-600 hover:underline">Storybook</a> – UI component dev environment</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mt-8 mb-4">📈 Interview & Algo Practice</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://leetcode.com" target="_blank" class="text-blue-600 hover:underline">LeetCode</a></li>
+          <li><a href="https://www.hackerrank.com" target="_blank" class="text-blue-600 hover:underline">HackerRank</a></li>
+          <li><a href="https://www.codingame.com" target="_blank" class="text-blue-600 hover:underline">CodinGame</a></li>
+          <li><a href="https://exercism.io" target="_blank" class="text-blue-600 hover:underline">Exercism</a></li>
+          <li><a href="https://www.interviewbit.com" target="_blank" class="text-blue-600 hover:underline">InterviewBit</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-bold text-indigo-700 mt-8 mb-4">📖 Documentation & Reference</h2>
+        <ul class="list-disc pl-5 text-sm text-gray-700 space-y-2">
+          <li><a href="https://reactnative.dev/docs/getting-started" target="_blank" class="text-blue-600 hover:underline">React Native Docs</a></li>
+          <li><a href="https://flutter.dev/docs" target="_blank" class="text-blue-600 hover:underline">Flutter Docs</a></li>
+          <li><a href="https://firebase.google.com/docs" target="_blank" class="text-blue-600 hover:underline">Firebase Docs</a></li>
+          <li><a href="https://developer.android.com/docs" target="_blank" class="text-blue-600 hover:underline">Android Dev Docs</a></li>
+          <li><a href="https://developer.apple.com/documentation" target="_blank" class="text-blue-600 hover:underline">Apple Developer Docs</a></li>
+          <li><a href="https://redux.js.org/introduction/getting-started" target="_blank" class="text-blue-600 hover:underline">Redux Docs</a></li>
+        </ul>
+      </section>
+    </aside>
+
+  </div>
+
+  <script>
+    function toggleSection(id, btn) {
+      const section = document.getElementById(id);
+      const icon = document.getElementById('projectToggleIcon');
+      const isHidden = section.classList.toggle('hidden');
+      icon.textContent = isHidden ? '➕' : '➖';
+      btn.setAttribute('aria-expanded', !isHidden);
+    }
+  </script>
+</body>
+</html>
